@@ -16,8 +16,16 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * this function
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  const num = parseInt(document.getElementById("num").value)
+
+  let sum = 0
+
+  for (let count = 1; count < num || count == num; count++) {
+    sum += count
+  }
+
+  document.getElementById("answer").innerHTML = "your answer is: " + sum + "."
 }
